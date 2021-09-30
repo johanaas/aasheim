@@ -1,38 +1,489 @@
 .App {
+  font-family: 'Staatliches';
+}
+
+.Section {
+  width: 100vw;
+  min-height: 25vh;
+  padding-bottom: 10vh;
+}
+
+.Title {
+  text-align: center;
+  padding-top: 10vh;
+  margin: 0;
+  letter-spacing: 2px;
+}
+
+.Subtitle {
+  text-align: center;
+  padding-top: 2vh;
+  font-weight: 100;
+}
+
+.divider {
+  width: 60vw;
+  height: 0.25vh;
+  background-color: #F2D8C9;
+  margin: 0 auto;
+}
+
+/**
+-----------------------------------------------------------
+**/
+
+.Landing {
+  background-color: #C4C7C9;
+}
+
+.Education {
+  background-color: #DEDFE0;
+  color: #525761;
+}
+
+.Experiences {
+  background-color: #525761;
+  color: #DEDFE0;
+}
+
+.Interests {
+  background-color: #C4C7C9;
+}
+
+.Future {
+  background-color: #DEDFE0;
+}
+
+.Contact {
+  background-color: #525761;
+}
+
+.Behind {
+  background-color: #e26d5c;
+}
+
+.Roadmap {
+  background-color: #c9cba3;
+  color: #18020C;
+}
+
+/* 
+#94BF80
+*/
+
+.Freetime {
+  background-color: #ffe1a8;
+}
+
+/**
+-----------------------------------------------------------
+**/
+
+.about-me {
+  margin-left: 20vw;
+  padding-top: 5vh;
+}
+
+.lastname {
+  font-size: 75px;
+}
+
+.firstname {
+  font-size: 52px;
+  margin-top: -70px;
+}
+
+.short-text {
+  margin-top: 10vh;
+  font-weight: 100;
+  width: 23vw;
+}
+
+.landing-picture {
+  height: 400px;
+  width: 400px;
+  margin-left: 35vw;
+  border: none;
+  outline: none;
+}
+
+.behind-picture {
+  height: 400px;
+  width: 400px;
+  margin-left: 35vw;
+  border: none;
+  outline: none;
+}
+
+/**
+-----------------------------------------------------------
+**/
+
+.container {
+  display: grid;
+  margin-top: 5vh;
+  grid-template-columns: 2fr 2fr 4fr 2fr;
+  grid-template-rows: 5vh;
+  grid-template-areas: 
+  ". company role ."
+  ". period desc .";
+}
+
+.company {
+  grid-area: company;
+}
+
+.role {
+  grid-area: role;
+  margin-top: 3vh;
+  letter-spacing: 1px;
+}
+
+.period {
+  grid-area: period;
+}
+
+.desc {
+  grid-area: desc;
+}
+
+.subsub-title {
+  text-align: left;
+  margin-left: 20vw;
+  color: #C4C7C9;
+  font-size: 24px;
+}
+
+/**
+-----------------------------------------------------------
+**/
+
+.icon {
+  vertical-align: middle;
+}
+
+/**
+----------------------- CONTACT ---------------------------
+**/
+
+.white-text {
+  color: #DEDFE0;
+}
+
+.contact-container {
+  display: grid;
+  width: 60vw;
+  margin: 0 auto;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "what how when";
+  text-align: center;
+  color: #DEDFE0;
+}
+
+.what {
+  grid-area: what;
+}
+
+.how {
+  grid-area: how;
+}
+
+.when {
+  grid-area: when;
+}
+
+/**
+----------------------- TOGGLE ---------------------------
+**/
+
+.toggle {
+  size: 200;
+  position: absolute;
+  right: 10vh;
+  top: 10vh;
+}
+
+.toggle {
+  display: inline-block;
+  width: 60px;
+  height: 35px;
+}
+
+.toggle input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  background-color: #e26d5c;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: #C4C7C9;
+  transition: 0.4s;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+  background-color: #e26d5c;
+}
+
+input:checked + .slider {
+  background-color: #C4C7C9;
+}
+
+.slider.rounded {
+  border-radius: 34px;
+}
+
+.slider.rounded:before {
+  border-radius: 50%;
+}
+
+/**
+----------------------- CARD ---------------------------
+**/
+
+.card-container {
+  display: grid;
+  width: 60vw;
+  margin: 0 auto;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "left middle middle2 right";
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.card {
+  margin: 1vw;
+  text-align: left;
+  padding: 2vw;
+  padding-top: 1vw;
+  text-align: center;
+  border-radius: 10px;
+  background-color: #A0A5AB;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.card:hover {
+  background-color: #DEDFE0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/**
+----------------------- FUTURE ---------------------------
+**/
+
+.future-container {
+  display: grid;
+  width: 60vw;
+  margin: 0 auto;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "motivasjon middle2 right";
+  text-align: center;
 }
 
-.App-link {
-  color: #61dafb;
+.future-card {
+  margin: 1vw;
+  box-shadow: 0px 0px 4px 5px lightgrey;
+  text-align: left;
+  padding: 2vw;
+  padding-top: 1vw;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.future-divider {
+  width: 5vw;
+  height: 0.25vh;
+  left: 2vw;
+  background-color: #525761;
+}
+
+.motivasjon {
+  grid-area: motivasjon;
+}
+
+/**
+----------------------- ROADMAP ---------------------------
+**/
+
+.roadmap-container {
+  display: grid;
+  width: 60vw;
+  margin: 0 auto;
+  margin-top: 15vh;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: 
+  "stop0 middleline ."
+  ". middleline stop1"
+  "stop2 middleline ."
+  ". middleline stop3"
+  "stop4 middleline ."
+  ". middleline stop5"
+  "stop6 middleline ."
+  ". middleline stop7"
+  "stop8 middleline ."
+  ". middleline stop9"
+  "stop10 middleline ."
+  ". middleline stop11"
+  "stop12 middleline ."
+  ;
+}
+
+.middle-line {
+  height: auto;
+  grid-area: middleline;
+  margin: 0 auto;
+  border-radius: 10px;
+  border: #000000;
+  border-width: 5px;
+  border-style: solid;
+}
+
+.roadmap-card {
+}
+
+.image-roadmap{
+  width: 20vw;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.stop0 {
+  grid-area: stop0;
+  text-align: left;
+}
+
+.stop1 {
+  grid-area: stop1;
+  text-align: right;
+}
+
+.stop2 {
+  grid-area: stop2;
+  text-align: left;
+}
+
+.stop3 {
+  grid-area: stop3;
+  text-align: right;
+}
+
+.stop4 {
+  grid-area: stop4;
+  text-align: left;
+}
+
+.stop5 {
+  grid-area: stop5;
+  text-align: right;
+}
+
+.stop6 {
+  grid-area: stop6;
+  text-align: left;
+}
+
+.stop7 {
+  grid-area: stop7;
+  text-align: right;
+}
+.stop8 {
+  grid-area: stop8;
+  text-align: left;
+}
+.stop9 {
+  grid-area: stop9;
+  text-align: right;
+}
+.stop10 {
+  grid-area: stop10;
+  text-align: left;
+}
+.stop11 {
+  grid-area: stop11;
+  text-align: right;
+}
+.stop12 {
+  grid-area: stop12;
+  text-align: left;
+}
+
+.line-right {
+  width: 30vw;
+  height: 1px;
+  background-color: #000000;
+}
+
+.line-left {
+  width: 30vw;
+  height: 1px;
+  background-color: #000000;
+}
+
+
+/**
+----------------------- FREETIME ---------------------------
+**/
+
+.freetime-container {
+  display: grid;
+  width: 60vw;
+  margin: 0 auto;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: 
+  ". freetimebox1 freetimebox1 freetimebox1 . freetimebox2 freetimebox2"
+  "freetimebox3 freetimebox3 . freetimebox4 freetimebox4 . ."
+  ". freetimebox5 freetimebox5 freetimebox5 . freetimebox6 freetimebox6"
+  "freetimebox7 freetimebox7 . . freetimebox8 freetimebox8 ."
+  ". . freetimebox9 freetimebox9 . freetimebox10 freetimebox10"
+
+  ;
+}
+
+.freetime-box1 {
+  grid-area: freetimebox1;
+}
+.freetime-box2 {
+  grid-area: freetimebox2;
+}
+.freetime-box3 {
+  grid-area: freetimebox3;
+}
+.freetime-box4 {
+  grid-area: freetimebox4;
+}
+.freetime-box5 {
+  grid-area: freetimebox5;
+}
+.freetime-box6 {
+  grid-area: freetimebox6;
+}
+.freetime-box7 {
+  grid-area: freetimebox7;
+}
+.freetime-box8 {
+  grid-area: freetimebox8;
+}
+.freetime-box9 {
+  grid-area: freetimebox9;
+}
+.freetime-box10 {
+  grid-area: freetimebox10;
 }
