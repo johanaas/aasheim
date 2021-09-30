@@ -1,6 +1,5 @@
 import Title from "../Title";
 import Subtitle from "../Subtitle";
-import ContactBox from "../ContactBox";
 import FreetimeBox from "../FreetimeBox";
 
 

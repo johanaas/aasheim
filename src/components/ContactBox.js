@@ -1,5 +1,3 @@
-import { FiClock} from "react-icons/fi";
-
 function ContactBox(props) {
     return <div>
         <h3>{props.title}</h3>

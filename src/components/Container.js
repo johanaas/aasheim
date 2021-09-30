@@ -1,5 +1,4 @@
 import { FiClock} from "react-icons/fi";
-import * as Bi from "react-icons/bi";
 
 function Container(props) {
     return <div className="container">

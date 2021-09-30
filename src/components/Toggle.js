@@ -1,6 +1,5 @@
 import React from "react";
 import cx from "classnames";
-import { FiClock} from "react-icons/fi";
 
 const Toggle = ({rounded = false, isToggled, onToggle}) => {
     
