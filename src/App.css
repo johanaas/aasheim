@@ -280,6 +280,10 @@ input:checked + .slider {
   background-color: #A0A5AB;
 }
 
+.card-text {
+  font-size: 12px;
+}
+
 .card:hover {
   background-color: #DEDFE0;
 }
@@ -355,9 +359,6 @@ input:checked + .slider {
   border-style: solid;
 }
 
-.roadmap-card {
-}
-
 .image-roadmap{
   width: 20vw;
   border-radius: 10px;
@@ -367,6 +368,14 @@ input:checked + .slider {
 .stop0 {
   grid-area: stop0;
   text-align: left;
+}
+
+.roadmap-text-line-left {
+  padding-right: 5vw;
+}
+
+.roadmap-text-line-right {
+  padding-left: 5vw;
 }
 
 .stop1 {
@@ -449,7 +458,7 @@ input:checked + .slider {
   grid-template-rows: auto;
   grid-template-areas: 
   ". freetimebox1 freetimebox1 freetimebox1 . freetimebox2 freetimebox2"
-  "freetimebox3 freetimebox3 . freetimebox4 freetimebox4 . ."
+  "freetimebox3 freetimebox3 . freetimebox4 freetimebox4 freetimebox4 ."
   ". freetimebox5 freetimebox5 freetimebox5 . freetimebox6 freetimebox6"
   "freetimebox7 freetimebox7 . . freetimebox8 freetimebox8 ."
   ". . freetimebox9 freetimebox9 . freetimebox10 freetimebox10"

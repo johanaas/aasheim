@@ -7,7 +7,7 @@ function Card(props) {
     if (view) {
         return (
             <div className="card" onMouseLeave={() => {setView(false)}} >
-                <p>{props.text}</p>
+                <p className="card-text">{props.text}</p>
             </div>
         );
     }
